@@ -34,9 +34,9 @@ export default function StarBackground() {
       blinkSpeed: number
       maxOpacity: number
       
-      constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
+      constructor(width: number, height: number) {
+        this.x = Math.random() * width
+        this.y = Math.random() * height
         this.size = Math.random() * 2 + 0.5
         this.opacity = Math.random()
         this.blinkSpeed = Math.random() * 0.05
@@ -52,6 +52,7 @@ export default function StarBackground() {
       }
       
       draw() {
+        if (!ctx) return
         ctx.beginPath()
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         ctx.fillStyle = `rgba(152, 255, 152, ${this.opacity})`
@@ -61,7 +62,7 @@ export default function StarBackground() {
     
     // Create stars
     for (let i = 0; i < starCount; i++) {
-      stars.push(new Star())
+      stars.push(new Star(canvas.width, canvas.height))
     }
     
     // Animation loop

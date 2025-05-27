@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Card } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
+// import { Progress } from "@/components/ui/progress"
 import { 
   Droplets, 
   Thermometer, 
@@ -10,6 +10,7 @@ import {
   Wind, 
   AlertTriangle 
 } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 type SensorType = "moisture" | "temperature" | "light" | "humidity" | "nutrient"
 
@@ -115,9 +116,10 @@ export default function PlantBox({
           )}
         </div>
         
-        <Progress 
+        {/* <Progress 
           value={progressValue} 
-          className={`h-2 mb-3 ${
+          className={cn(
+            "h-2 mb-3",
             isCritical 
               ? "bg-red-500" 
               : progressValue > 70 
@@ -125,8 +127,8 @@ export default function PlantBox({
                 : progressValue > 30 
                   ? "bg-green-400" 
                   : "bg-yellow-500"
-          }`}
-        />
+          )}
+        /> */}
         
         <div className="flex justify-between text-xs text-gray-300 mb-3">
           <span>{minValue}{unit}</span>
