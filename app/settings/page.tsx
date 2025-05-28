@@ -32,7 +32,7 @@ export default function SettingsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-green-400 mb-2">Settings</h1>
         <p className="text-gray-400">
-          Configure your AgroSense IoT dashboard preferences
+          Configure your AgroCense IoT dashboard preferences
         </p>
       </div>
 

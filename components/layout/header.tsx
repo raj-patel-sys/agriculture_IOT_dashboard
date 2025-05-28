@@ -39,7 +39,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Leaf className="h-6 w-6 text-green-500" />
-              <span className="text-xl font-bold text-white">AgroSense</span>
+              <span className="text-xl font-bold text-white">AgroCense</span>
             </Link>
           </div>
 

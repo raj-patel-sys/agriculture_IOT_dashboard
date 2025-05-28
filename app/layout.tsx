@@ -9,7 +9,7 @@ import StarBackground from '@/components/animations/star-background'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AgroSense IoT - Smart Agriculture Solutions',
+  title: 'AgroCense IoT - Smart Agriculture Solutions',
   description: 'Advanced IoT solutions for modern agriculture. Monitor and optimize your crops with real-time sensor data.',
 };
 

@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-green-500 text-lg font-semibold mb-4">AgroSense</h3>
+            <h3 className="text-green-500 text-lg font-semibold mb-4">AgroCense</h3>
             <p className="text-sm">
               Advanced IoT solutions for modern agriculture. Monitoring and
               optimizing your crops with cutting-edge technology.
@@ -26,14 +26,14 @@ export default function Footer() {
             <address className="not-italic text-sm space-y-2">
               <p>123 Agriculture Way</p>
               <p>Crop City, CS 12345</p>
-              <p>Email: info@agrosense.com</p>
+              <p>Email: info@agrocense.com</p>
               <p>Phone: (123) 456-7890</p>
             </address>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} AgroSense. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AgroCense. All rights reserved.</p>
         </div>
       </div>
     </footer>
